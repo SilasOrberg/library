@@ -20,6 +20,7 @@ body {
 
 table {
     border: 2px solid var(--border);
+    border-radius: 5px;
     margin: 50px auto;
     padding: 20px;
     min-width: 50%;
@@ -40,6 +41,30 @@ th {
     background-color: var(--btn);
 }
 
+#delete-button, #read-button {
+    border: 1.5px solid var(--border);
+    padding: 0.2rem;
+    border-radius: 5px;
+    background-color: var(--btn);
+    text-align: center;
+}
+
+#submit-button {
+    border: 1.5px solid green;
+    color: green;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--btn);
+}
+
+#submit-button:hover {
+    background-color: var(--btn-hover);
+}
+
+#submit-button:active {
+    background-color: var(--btn-active);
+}
+
 #new-book-button:hover {
     background-color: var(--btn-hover);
 }
@@ -55,10 +80,8 @@ th {
 }
 
 input {
-    margin: 0.5rem;
     min-width: 25%;
-}
-
-label {
-    text-align: start;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
 }
